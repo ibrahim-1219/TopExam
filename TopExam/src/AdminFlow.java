@@ -26,7 +26,7 @@ public class AdminFlow {
                 continue;
             }
             if (op.equals("5")) {
-                 DatabaseManagement.DB.logout();
+                DatabaseManagement.DB.logout();
 
             } else {
                 System.out.println("Please Enter a valid Number :");

@@ -21,5 +21,5 @@ public class Register {
         } while(!b);
         Student student = DatabaseManagement.DB.addStudent(name,clas,email,password);
         return  student;
-        }
+    }
 }

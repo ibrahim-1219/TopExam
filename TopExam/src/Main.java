@@ -1,5 +1,4 @@
-
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
@@ -22,14 +21,16 @@ public class Main {
                 student=log.login();
                 break;
             }
-           } while (true);
+
+        } while (true);
+
         if(student.isIs_admin())
         {
             AdminFlow adm_flow = new AdminFlow();
         }
         else
         {
-            StudentFlow std_flow =new StudentFlow();
+            StudentFlow std_flow =new StudentFlow(student);
         }
 
 
@@ -58,8 +59,6 @@ public class Main {
             String query="SELECT * FROM questions;";
             s.execute(query);
             System.out.println("excuted");
-
-
         }
         catch (SQLException ex)
         {

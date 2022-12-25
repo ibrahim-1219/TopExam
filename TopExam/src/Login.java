@@ -26,5 +26,4 @@ public class Login {
         } while(true);
         return  student;
     }
-    }
-
+}

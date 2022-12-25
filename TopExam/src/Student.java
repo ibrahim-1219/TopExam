@@ -6,16 +6,20 @@ public class Student {
     private String clas;
     private boolean is_admin;
 
-    public Student(String name, String email, String password,String clas,boolean is_admin) {
+
+    public Student(String name, String email, String password,String clas,boolean is_admin,int id) {
         this.name = name;
         this.email = email;
         this.password = password;
         this.clas=clas;
+        this.id=id;
     }
     public  Student()
     {
 
     }
+
+
 
     public int getId() {
         return id;
